@@ -13,11 +13,4 @@ async def on_command_error(ctx, error):
     await ctx.send(error_msg)
 
 
-@client.event
-async def on_message(message):
-    if message.content.startswith('h!symmetry'):
-        await message.channel.send(embed)
-        embed.set_thumbnail(url="https://pbs.twimg.com/media/EL50G8tUcAAehfQ?format=jpg&name=4096x4096")
-
-
 bot.run(token)
